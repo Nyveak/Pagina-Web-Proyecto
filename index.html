@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Proyecto Web CUL</title>
+</head>
+
+<body id="body" data-bs-theme="dark">
+    <header id="header">
+        <div class="kmlogo__menu">
+            <i class="bi bi-list" id="kmbtn_abrir"></i>
+        </div>
+        <div>
+            <button onclick="cambiarTema()" class="btn rounded-fill">
+                <i id="dl-icon" class="bi bi-moon-stars-fill"></i>
+            </button>
+        </div>
+    </header>
+
+    <div class="kmmenu__lateral" id="kmmenu_lateral">
+        <div class="kmnombre__pagina">
+            <div class="kmlogo1"><img src="imagenes/Logo CUL.png" alt=""></div>
+            <div class="kmlogo2"><img src="imagenes/Logo CUL 2.png" alt=""></div>
+        </div>
+
+        <div class="kmmenu__opciones">
+            <a href="#Inicio">
+                <div class="kmopcion">
+                    <i class="bi bi-house-fill" title="Inicio"></i>
+                    <p>Inicio</p>
+                </div>
+            </a>
+            <a href="#Proyecto">
+                <div class="kmopcion">
+                    <i class="bi bi-file-earmark-richtext-fill" title="Proyecto"></i>
+                    </p>Proyecto</p>
+                </div>
+            </a>
+            <a href="#Equipo">
+                <div class="kmopcion">
+                    <i class="bi bi-people-fill" title="Equipo"></i>
+                    <p>Equipo</p>
+                </div>
+            </a>
+            <a href="#Contacto">
+                <div class="kmopcion">
+                    <i class="bi bi-chat-dots-fill" title="Contacto"></i>
+                    <p>Contacto</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <main>
+        <section class="kminicio container-fluid" id="Inicio">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="imagenes/Interfaz 1.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-light">
+                            <h5>Inicio de sesión</h5>
+                            <p>Ingresa con tu cuenta Docente, Coordinador o Administrador de manera facil y rapida</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/Interfaz 2.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-light">
+                            <h5>Disponibilidad Horaria para los Docentes</h5>
+                            <p>Como Docente puedes registrar la disponibilidad horaria que tengas para la asignación de
+                                tus clases</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagenes/Interfaz 3.png" class="d-block w-100" alt="...">
+                        <div class="carousel-caption d-none d-md-block text-light">
+                            <h5>Administra todo</h5>
+                            <p>Como Administrador tienes total control de los datos ingresados mediante el uso de una
+                                interfaz intuitiva</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="kmproyecto container-fluid" id="Proyecto">
+            <div class="kmtituloproyecto text-center">
+                <h1><b>Desarrollo de un sistema de disponibilidad horaria para los docentes de la universidad.</b></h1>
+                <div class="mt-5">
+                    <p>Este proyecto que estamos realizando en conjunto con las diferentes materias que damos a lo largo
+                        del Semestre, como lo son Base de Datos, Programación Orientada a Objetos y Electiva Disciplinar
+                        tiene como fin crear una herramienta digital para la gestión de horarios de los docentes de la
+                        universidad, para que de esta manera puedan administrar su disponibilidad horaria de una manera
+                        mucho más eficaz.</p>
+                </div>
+            </div>
+            <div class="kmproyectonecesidades mt-5">
+                <h1 class="text-center">
+                    <b>Necesidad de un sistema de disponibilidad horaria</b>
+                </h1>
+                <div class="kminfocards mt-3">
+                    <div class="kmcards">
+                        <div class="kmiconoytitulo d-flex align-items-center">
+                            <i class="bi bi-1-square-fill"></i>
+                            <h5>Problemática</h5>
+                        </div>
+                        <p>La universidad actualmente no cuenta con una herramienta digital que permita a los docentes
+                            administrar y mostrar su disponibilidad horaria.</p>
+                    </div>
+                    <div class="kmcards">
+                        <div class="kmiconoytitulo d-flex align-items-center">
+                            <i class="bi bi-2-square-fill"></i>
+                            <h5>Incovenientes</h5>
+                        </div>
+                        <p>Se generan malentendidos y dificultades a la hora de coordinar la asistencia de los
+                            estudiantes a las clases y actividades extracurriculares.
+                        </p>
+                    </div>
+                    <div class="kmcards">
+                        <div class="kmiconoytitulo d-flex align-items-center">
+                            <i class="bi bi-3-square-fill"></i>
+                            <h5>Baja Productividad</h5>
+                        </div>
+                        <p>Se reduce el tiempo y los recursos invertidos en la planificación y programación de las
+                            actividades de los docentes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kmproyectoobjetivos mt-3">
+                <h1 class="text-center">
+                    <b>Objetivos del sistema</b>
+                </h1>
+                <div class="kminfocards mt-3">
+                    <div class="kmcards">
+                        <div class="kmicon d-flex justify-content-center align-items-center">
+                            <i class="bi bi-person-fill-check"></i>
+                        </div>
+                        <p class="text-center">Permitir a los docentes administrar y mostrar su disponibilidad horaria
+                            de manera eficiente.
+                        </p>
+                    </div>
+                    <div class="kmcards">
+                        <div class="kmicon d-flex justify-content-center align-items-center">
+                            <i class="bi bi-check-all"></i>
+                        </div>
+                        <p class="text-center">Facilitar la coordinación de la asistencia de los estudiantes a las
+                            clases y actividades
+                            extracurriculares.
+                        </p>
+                    </div>
+                    <div class="kmcards">
+                        <div class="kmicon d-flex justify-content-center align-items-center">
+                            <i class="bi bi-clipboard2-data-fill"></i>
+                        </div>
+                        <p class="text-center">Incrementar la productividad de la planificación y programación de las
+                            actividades de los docentes.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="kmproyectovideofuncionamiento mt-3">
+                <div class="text-center">
+                    <h1><b>Funcionamiento del Sistema</b></h1>
+                    <p>En este pequeño video se puede apreciar el funcionamiento del sistema hasta el momento.</p>
+                </div>
+                <video controls autoplay muted>
+                    <source src="videos/Video Funcionamiento.mp4" type="video/mp4">
+                    <source src="videos/Video Funcionamiento.webm" type="video/webm">
+                    Tu navegador no es compatible con el formato de video.
+                </video>
+            </div>
+        </section>
+        <section class="kmequipo container-fluid mt-5" id="Equipo">
+            <div class="text-center">
+                <h1><b>Equipo de Trabajo</b></h1>
+                <p>Formamos un equipo para la creacion y desarrollo de la propuesta del sistema, asignamos tarea y las
+                    desarrollamos utilizando diferentes herramientas de desarrollo.<br>El equipo se dividio las tareas
+                    de la siguiente manera:</p>
+            </div>
+            <div class="kmequipointegrantes">
+                <div class="kmflipcard">
+                    <div class="kmface kmfront">
+                        <img src="imagenes/Logo MySQL.png" alt="">
+                        <h3>Base de Datos</h3>
+                    </div>
+                    <div class="kmface kmback">
+                        <h3>Base de Datos</h3>
+                        <p>La creacion de la base de datos le fue asignado al integrante Fabian de la Cruz, apoyado de
+                            la herramienta phpmyadmin haciendo uso del lenguaje SQL.</p>
+                        <i class="bi bi-database-check"></i>
+                    </div>
+                </div>
+                <div class="kmflipcard">
+                    <div class="kmface kmfront">
+                        <img src="imagenes/Logo Java.png" alt="">
+                        <h3>Programación del Sistema</h3>
+                    </div>
+                    <div class="kmface kmback">
+                        <h3>Programación del Sistema</h3>
+                        <p>Toda la programación e interfaz del sistema lo tuvo a cargo el integrante David Gúzman,
+                            apoyado por la herramienta NetBeans y el lenguaje de programación Java.</p>
+                        <i class="bi bi-braces"></i>
+                    </div>
+                </div>
+                <div class="kmflipcard">
+                    <div class="kmface kmfront">
+                        <img src="imagenes/Logo HTML5.png" alt="">
+                        <h3>Pagina Web del Sistema</h3>
+                    </div>
+                    <div class="kmface kmback">
+                        <h3>Pagina Web del Sistema</h3>
+                        <p>La pagina web informativa sobre este nuevo sistema estuvo a cargo del integrante Kevin
+                            Martinez, apoyado de herramientas tales como HTML5, CSS, JavaScript y Bootstrap.</p>
+                        <i class="bi bi-filetype-html"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid mt-5 p-5" id="Contacto">
+        <div class="kmfooterlinea">
+            <div class="kmredes d-flex justify-content-center align-items-center mt-2" id="redes">
+                <div class="kmicono">
+                    <i class="bi bi-facebook"></i>
+                </div>
+                <div class="kmicono">
+                    <i class="bi bi-instagram"></i>
+                </div>
+                <div class="kmicono">
+                    <i class="bi bi-twitter-x"></i>
+                </div>
+                <div class="kmicono">
+                    <i class="bi bi-pinterest"></i>
+                </div>
+            </div>
+        </div>
+        <div class="kmfooterlogos d-flex justify-content-center align-items-center mt-5">
+            <div class="kmlogocul1">
+                <img src="imagenes/Logo CUL.png" alt="">
+            </div>
+            <div class="kmlogocul2">
+                <img src="imagenes/Logo Cul 2.png" alt="">
+            </div>
+        </div>
+        <div class="kmcopyrigth text-center mt-3">
+            <h6><small>Copyrigth © 2023 CORPORACIÓN UNIVERSITARIA LATINOAMERICANA - CUL</small></h6>
+        </div>
+        <div class="kminfoad d-flex justify-content-center text-center">
+            <div class="kmtexto">
+                <p>Ingeniería de Sistemas y Computación</p>
+            </div>
+            <div class="kmtexto">
+                <p>|</p>
+            </div class="kmtexto">
+            <div>4° Semestre</div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
